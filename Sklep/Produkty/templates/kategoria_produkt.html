@@ -1,0 +1,20 @@
+    {extends 'szablon.html' %}
+
+
+    {% block produkt %}
+
+
+    {% if kategoria_produkt %}
+
+        {% for produkt in kategoria_produkt %}
+
+            <p><a href =""> {{produkt.nazwa}}</a></p>
+        {% endfor %}
+
+    {% else %}
+
+
+    {% endif %}
+
+
+    {$ endblock %}
